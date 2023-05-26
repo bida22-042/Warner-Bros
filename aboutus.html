@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        article{
+            background: rgb(43, 48, 47);
+            margin: auto;
+            font-size: 20px;
+            width: 50%;
+            padding: 10px;
+        }
+        article h2{
+            font-size: 20px;
+        }
+        article ul p{
+            font-size: 15px;
+            list-style-type: armenian;
+            text-indent: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="master.html"><img src="images/logo.png" alt="logo" height="50px"></a>
+                </div>
+                <nav>
+                    
+                    <ul id="menuList">
+                        <li ><i class="bi bi-house"><span> </span></i><a href="master.html">Home</a></li>
+                        <li><i class="bi bi-film"><span></span></i> <a href="Movies.html">Movies</a></li>
+                        <li><i class="bi bi-tv"><span></span></i> <a href="tvshows.html">TV Shows</a></li>
+                        <li><i class="bi bi-controller"> <span></span></i><a href="videogames.html">Video Games</a></li>
+                        <li id="current"><i class="bi bi-info-circle"><span> </span></i><a href="#">About us</a></li>
+                        <li><i class="bi bi-info-circle"><span> </span></i><a href="feedback.html">Feedback</a></li>
+                    </ul>  
+                </nav>
+                <div class="menu-icon" onclick="togglemenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Search..." >
+                <a href="#">
+                    <i class="bi bi-search">
+                        
+                    </i>
+                </a>
+            </div>
+    </header>
+    <article>
+        <img src="images/WB_Logo.png" width="300px" alt="">
+        <p>Warner Bros. Entertainment Inc. (commonly known as Warner Bros. or abbreviated as WB) is an American film and entertainment studio headquartered at the Warner Bros. Studios complex in Burbank, California, and a subsidiary of Warner Bros. Discovery.</p>
+        <p>Warner Bros. Pictures has 415 movie releases in the completed production status.</p>
+    </article>
+    <footer>
+        <div class="socialmedia">
+            <p>Follow us</p>
+            <a href="https://www.facebook.com/warnerbrosent/"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/Warnerbros/"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.youtube.com/user/WarnerBrosPictures"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.pinterest.com/warnerbrosent/"><i class="bi bi-pinterest"></i></a>
+            <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.warnerbros.com/newsletter"><i class="bi bi-envelope-fill"></i>
+            </a>
+        </div>
+        <p>Copyright &copy; 2023, All rights reserved</p>
+    </footer>
+</body>
+</html>

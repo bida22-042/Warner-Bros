@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        h2{
+            color: #0af;
+        }
+        .gender{
+            color: #fff;
+            
+        }
+        .input{
+            width: 400px;
+            font-size: 20px;
+            color: #0af;
+            font-weight: bold;
+        }
+        article{
+            width: 70%;
+            padding: 50px;
+            border: 2px solid green;
+            margin: auto;
+        }
+        #fldsetcontrols{
+            border: none;
+        }
+        .rate i{
+            font-size: 30px;
+            padding: 20px;
+        }
+        .rate i:hover{
+            color: yellow;
+        }
+        .genre label{
+            font-size: 20px;
+        }
+        #btnclear, #btnsubmit{
+            font-size: 40px;
+            width: 200px;
+            margin-top: 50px;
+            border-radius: 15px 15px 15px 15px;
+        }
+        #btnclear{
+            background-color: rgb(164, 164, 164);
+        }
+        #btnsubmit{
+            background-color: rgb(122, 218, 122);
+        }
+        #btnsubmit:hover{
+            background-color: rgb(0, 255, 38);
+        }
+        #btnclear:hover{
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="master.html"><img src="images/logo.png" alt="logo" height="50px"></a>
+                </div>
+                <nav>
+                    
+                    <ul id="menuList">
+                        <li ><i class="bi bi-house"><span> </span></i><a href="master.html">Home</a></li>
+                        <li><i class="bi bi-film"><span></span></i> <a href="Movies.html">Movies</a></li>
+                        <li><i class="bi bi-tv"><span></span></i> <a href="tvshows.html">TV Shows</a></li>
+                        <li><i class="bi bi-controller"> <span></span></i><a href="videogames.html">Video Games</a></li>
+                        <li><i class="bi bi-info-circle"><span> </span></i><a href="aboutus.html">About us</a></li>
+                        <li id="current"><i class="bi bi-info-circle"><span> </span></i><a href="#">Feedback</a></li>
+                    </ul>  
+                </nav>
+                <div class="menu-icon" onclick="togglemenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Search..." >
+                <a href="#">
+                    <i class="bi bi-search">
+                        
+                    </i>
+                </a>
+            </div>
+    </header>
+
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
+
+    <article>
+        <form action="post" action="file:///C:/Users/bida22-042/Desktop/Warner%20bros2/feedback.html">
+            <img id="form-image" src="images/logo.png" width="150px" height="100px">
+
+            <fieldset id="fldsetcontrols">
+
+                <div class="rate">
+                    <h2>How was your experience? </h2><br>
+                        <input type="radio" name="list" value="heart-eyes">
+                        <label class="experience" for="heart-eyes"><i class="bi bi-emoji-heart-eyes"></i></label>
+
+                        <input type="radio" name="list" value="smile">
+                        <label class="experience" for="smile"><i class="bi bi-emoji-smile"></i></label>
+
+                        <input type="radio" name="list" value="neutral">
+                        <label class="experience" for="neutral"><i class="bi bi-emoji-neutral"></i></label>
+
+                        <input type="radio" name="list" value="frown">
+                        <label class="experience"  for="frown"><i class="bi bi-emoji-frown"></i></label>
+                </div> 
+                <div class="input">
+                    <p>
+                        <label class="Firstname" for="Firstname">First name:</label>
+                        <input type="text" name="Firstname" id="Firstname" size="50" maxlength="50">
+                    </p>
+                    <p>
+                        <label class="Favorite genres" for="Last name">Last name:</label>
+                        <input type="text" name="Lastname" id="Lastname" size="50" maxlength="50">
+                    </p>
+                    <p>
+                        <label class="Favorite genres" for="Country / Region">Country / Region:</label>
+                        <input type="text" name="Country / Region" id="Country / Region" size="50" maxlength="50">
+                    </p>
+                    <p>
+                        <label class="email" for="Emailaddress">Email address:</label>
+                        <input required type="email" name="email" id="EmailAddress" size="50" maxlength="50" placeholder="john@gmail.com">
+                    </p>
+                </div>   
+                <p> 
+                    <h2>Would you like to be notified of latest releases?</h2>
+                    <input type="radio" name="list" value="yes" id="yes"> 
+                    <label class="yes/no" for="yes">Yes</label>
+
+                    <input type="radio" name="list" value="no" id="no">
+                    <label class="yes/no" for="no">No</label>
+                </p>
+                
+                <div class="gender">
+                    <h2>Gender</h2>
+                    <input type="radio" name="list" value="male" id="male">
+                    <i class="bi bi-gender-male"></i>
+                    <label id="gender" for="Male">Male</label>
+
+                    <input type="radio" name="list" value="female" id="female" img="images">
+                    <i class="bi bi-gender-female"></i>
+                    <label id="gender" for="Female"> Female</label>
+                                
+                    <input type="radio" name="list" value="Trans-gender" id="Trans-gender">
+                    <i class="bi bi-gender-trans"></i>
+                    <label id="gender" for="Transgender"> Trans-gender</label>
+
+                    <input type="radio" name="list" value="Prefer not to mention" id="prefer not to mention">
+                    <label id="gender" for="Transgender"> Prefer not to mention</label>
+                </div>
+
+                <div class="genre">
+                    <h2>Genre preferences</h2>
+                                
+                    <label for="chkaction">Action</label>
+                    <input type="checkbox" name="chkaction" id="chkaction">
+                    <br/>
+
+                    <label for="chkcomedy">Comedy</label>
+                    <input type="checkbox" name="chkcomedy" id="chkcomedy">
+                    <br/>
+
+                    <label for="chkhorror">Horror</label>
+                    <input type="checkbox" name="chkhorror" id="chkhorror">
+                    <br/>
+
+                    <label for="chkanimation">Animation</label>
+                    <input type="checkbox" name="chkanimation" id="chkanimation">
+                    <br/>
+                </div>
+
+                    <input type="reset" id="btnclear" name="btnclear" value="Clear">
+                    <input type="submit" id="btnsubmit" name="btnsubmit" value="Submit">
+                </fieldset>
+            </form>
+    </article>
+    <footer>
+        <div class="socialmedia">
+            <p>Follow us</p>
+            <a href="https://www.facebook.com/warnerbrosent/"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/Warnerbros/"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.youtube.com/user/WarnerBrosPictures"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.pinterest.com/warnerbrosent/"><i class="bi bi-pinterest"></i></a>
+            <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.warnerbros.com/newsletter"><i class="bi bi-envelope-fill"></i>
+            </a>
+        </div>
+        <p>Copyright &copy; 2023, All rights reserved</p>
+    </footer>
+</body>
+</html>
