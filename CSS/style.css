@@ -193,14 +193,7 @@ ul.breadcrumb li a:hover {
     background: #333333;
     color: greenyellow;
     cursor: pointer;
-}
-.cards{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    height: 100vh;
-}
+} 
 /*cards end*/
 
 /*Individual about pages*/
@@ -252,7 +245,7 @@ article .rating{
 }
 .trailer-container .trailer{
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
 .info{
     float: left;
